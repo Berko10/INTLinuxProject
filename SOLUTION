@@ -13,7 +13,7 @@ Broken Symlink
 -------------------
 Symbolic links are not updated.
 hard links always refer to the source, even if moved or removed
-they have to remove the "-s" flag and create a hard link
+they have to remove the "-s" flag and create a hard link.
 
 
 
