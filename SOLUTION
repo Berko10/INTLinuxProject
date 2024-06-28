@@ -11,7 +11,13 @@ Kernel System Calls
 
 Broken Symlink
 -------------------
-Symbolic links are not updated.
+option 1:
+Symbolic links are not updated when you move the file.
+They have to edit the symbolic link to the absolute path:
+ln -sf ../$FILENAME backups/latest-backup.obj
+
+option 2:
+They can use a hard link.
 hard links always refer to the source, even if moved or removed
 they have to remove the "-s" flag and create a hard link.
 
